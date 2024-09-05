@@ -1,0 +1,314 @@
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>ASSIGNMNET0/Create</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        color: #1a1f36;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+    }
+    body {
+        min-height: 100%;
+        background-color: #ffffff;
+    }
+    h1 {
+        letter-spacing: -1px;
+    }
+    a {
+        color: #5469d4;
+        text-decoration: unset;
+    }
+    input{
+        padding: 5px 5px;
+        width: 100%;
+        text-align: center;
+        height: 35px;
+        font-weight:bold;
+        font-size: large;
+    }
+    .assignment{
+        margin-top: 40px;
+    }
+    .assignment:hover{
+        font-size: 30px;
+    }
+    .assignment:active{
+        text-shadow: 2px 2px;
+    }
+    .front {
+        background: #fff;
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .background {
+        min-height: 692px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .flex {
+        display: flex;
+    }
+    .align-center {
+        align-items: center; 
+    }
+    .center {
+        align-items: center;
+        justify-content: center;
+    }
+    .box {
+        box-sizing: border-box;
+    }
+    .direction-column {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+        .button{
+            text-align: cwnter;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            border-radius: 20px;
+            height: 100px;
+        }
+        .button:hover {
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            border-radius: 25px;
+            height: 100px;
+        }
+        .button:active {
+                transform: scale(0.95);
+        }
+            
+        .button:focus {
+                outline: none;
+        }
+        #myfile{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            border-radius: 20px;
+            height: 100px;
+        }
+        #myfile:hover{
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+            border-radius: 25px;
+            height: 100px;
+        }
+        #myfile:active {
+                transform: scale(0.95);
+        }
+            
+        #myfile:focus {
+                outline: none;
+        }
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+        grid-template-columns: [start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
+        -ms-grid-rows: [top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+        grid-template-rows: [top] 1fr [top-gutter] repeat(8,64px) [bottom-gutter] 1fr [bottom];
+        justify-content: center;
+        margin: 0 -2%;
+        transform: rotate(-12deg) skew(-12deg);
+    }
+    .box-divider-all-2 {
+        box-shadow: inset 0 0 0 2px #e3e8ee;
+    }
+    .box-blue {
+        background-color: #5469d4;
+    }
+    .box-white {
+        background-color: #ffffff; 
+    }
+    .box-blue8 {
+        background-color: #212d63;
+    }
+    .box-gray1 {
+        background-color: #e3e8ee;
+    }
+    .box-cyan2 {
+        background-color: #7fd3ed;
+    }
+    .padding-top-64 {
+        padding-top: 64px;
+    }
+    .padding-top-24 {
+        padding-top: 24px;
+    }
+    .padding-top-48 {
+        padding-top: 48px;
+    }
+    .padding-bottom-24 {
+        padding-bottom: 24px;
+    }
+    .padding-horizontal-48 {
+        padding: 48px;
+    }
+    .flex-center {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .formbg {
+        margin: 0px auto;
+        width: 100%;
+        max-width: 448px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    }
+    span {
+        display: block;
+        font-size: 20px;
+        line-height: 28px;
+        color: #1a1f36;
+    }  
+    .footer-link span {
+        font-size: 14px;
+        text-align: center;
+    }
+    .listing a {
+        color: #697386;
+        font-weight: 600;
+        margin: 0 10px;
+    }
+    .animationRightLeft {
+        animation: animationRightLeft 2s ease-in-out infinite;
+    }
+    .animationLeftRight {
+        animation: animationLeftRight 2s ease-in-out infinite;
+    }
+    .tans3s {
+        animation: animationLeftRight 3s ease-in-out infinite;
+    }
+    .tans4s {
+        animation: animationLeftRight 4s ease-in-out infinite;
+    }
+    
+    @keyframes animationLeftRight {
+        0% {
+        transform: translateX(0px);
+        }
+        50% {
+        transform: translateX(1000px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+    } 
+    
+    @keyframes animationRightLeft {
+        0% {
+        transform: translateX(0px);
+        }
+        50% {
+        transform: translateX(-1000px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+    } </style>
+    </head>
+
+    <body>
+    <div class="front">
+        <div class="box flex direction-column" style="min-height: 100vh;flex-grow: 1;">
+        <div class="background box-white padding-top-64">
+            <div class="grid">
+            <div class="box flex" style="grid-area: top / start / 8 / end;">
+                <div class="box" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+                </div>
+            </div>
+            <div class="box flex" style="grid-area: 4 / 2 / auto / 5;">
+                <div class="box box-divider-light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 6 / start / auto / 2;">
+                <div class="box box-blue8" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 7 / start / auto / 4;">
+                <div class="box box-blue animationLeftRight" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 8 / 4 / auto / 6;">
+                <div class="box box-gray1 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 2 / 15 / auto / end;">
+                <div class="box box-cyan2 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 3 / 14 / auto / end;">
+                <div class="box box-blue animationRightLeft" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 4 / 17 / auto / 20;">
+                <div class="box box-gray1 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box flex" style="grid-area: 5 / 14 / auto / 17;">
+                <div class="box box-divider-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+            </div>
+            </div>
+        </div>
+        <div class="box-root padding-top-24 flex direction-column" style="flex-grow: 1; z-index: 9;">
+            <div class="box-root padding-top-48 padding-bottom-24 flex flex-center">
+            <h1><a>Create Your Assignment</a></h1>
+            </div>
+            <div class="formbg-outer">
+            <div class="formbg">
+                <div class="formbg-inner padding-horizontal-48">
+                <form>
+                    <div>
+                        <label><h2 class="file">Enter your Details : </h2></label><br>
+                    </div>
+                    <div><form>
+                    <input name="name" type="name" placeholder="Enter your Name"><br><br>
+                    <input name="assignment_name" type="name" placeholder="Enter Assignment name"><br><br>
+                    <input name="assignment_des" type="name" placeholder="Enter Assignment Description"><br><br>
+                        <input name="password" type="password" placeholder="Enter a Password"><br><br>
+                        <input name="con_password" type="password" placeholder="Confirm Password"><br><br>
+                    </form></div>
+                    <div>
+                        <button type="file" id="myFile" value="Choose the assignment">Choose the File</button><br><br> 
+                    </div>
+                    <div>  
+                        <button type="submit" class="button" value="Upload your creation">Upload your Creation</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="footer-link padding-top-24">
+                <div class="listing padding-top-24 padding-bottom-24 flex center">
+                <span><a href = "home.html">Home</a></span>
+                <span><a href="assignment0.html">Assignment0</a></span>
+                <span><a href="contactus.html">@ Contact</a></span>
+                <span><a href="aboutus.html">About us</a></span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </body>
+    </html>
